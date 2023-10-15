@@ -1,0 +1,357 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* Rest of your existing CSS styles */
+
+/* Additional CSS for animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.body-text, #recipe {
+  animation: fadeIn 1s ease-in;
+}
+
+body{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+header {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+#recipe-generator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#recipe {
+    text-align: left;
+    font-size: 16px;
+}
+
+.animated {
+    animation-duration: 1s;
+}
+
+.shake {
+    animation-name: shake;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.food-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap');
+
+body {
+  font-family: Libre Caslon Text;
+  background-color: #FFAB91;
+  background-image: url("/various-vegetables-black-table-with-space-message.jpg");
+
+}
+
+.body-text {
+  padding-top: 20vh;
+  text-align: center;
+  position: relative;
+  color: #f9f5ed;
+
+
+}
+
+.hamburger-icon {
+  position: absolute;
+  z-index: 1;
+  top: 5vh;
+  left: 5vw;
+  padding-bottom: 2vh;
+}
+
+.hamburger-icon span {
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.7s ease-in-out;
+  transform: none;
+}
+
+#openmenu:checked ~ .menu-pane {
+  left: -5vw;
+  transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .body-text {
+display: none;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+  opacity: 0;
+}
+
+div.menu-pane {
+  background-color: #000;
+  position: absolute;
+  transform: translateX(-105vw);
+  transform-origin: (0, 0);
+  width: 100vw;
+  height: 100%;
+  transition: 0.6s ease-in-out;
+}
+
+.menu-pane p {
+  color: white;
+  font-size: 0.6em;
+}
+
+.menu-pane nav {
+  padding: 10%;
+}
+
+.menu-links li, a, span {
+      transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+  padding: 10%;
+  display: inline-block;
+  color: #fff;
+}
+
+.menu-pane li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+    font-size: 1em;
+}
+
+
+.menu-pane li:first-child {
+  font-size: 1.3em;
+  margin-left: -10px;
+
+}
+
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu-links li:hover a {
+  color: #FFAB91;
+}
+
+.menu-links li:first-child:hover a {
+  color: black;  
+  background-color: #FFAB91;
+}
+
+#QC-info {
+  background-color: #FFAB91;
+    border: 2px solid;
+  border-color: #FFAB91;
+display: block;
+  opacity: 0;
+  
+}
+
+.menu-links li:first-child:hover #QC-info {
+opacity: 1;
+}
+
+.menu-links li:first-child:hover #DC-info {
+opacity: 1;
+}
+
+#DC-info {
+  background-color: #FFAB91;
+    border: 2px solid;
+  border-color: #FFAB91;
+display: block;
+  opacity: 0;
+}
+
+
+.menu-links li:first-child a {
+  padding: 5px;
+}
+
+
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 10vw;
+  opacity: 0;
+  height: 6vh;
+}
+/* Add this to your styles.css file or in a style tag in your HTML file */
+
+#recipe {
+  max-width: 800px; /* Adjust the max-width according to your layout */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent; /* Add a semi-transparent white background */
+  border-radius: 10px;
+  color: #f9f5ed; /* Set the text color to an off-white shade */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add a subtle box shadow */
+  margin: bottom 20px;
+}
+
+#recipe li {
+  list-style: none; /* Remove the default bullet point */
+  padding: 15px; /* Increase the padding for better spacing */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Adjust the border color and transparency */
+  border-radius: 5px; /* Add a border radius for smoother edges */
+  margin-bottom: 20px; /* Adjust the spacing between recipe items */
+}
+
+#recipe a {
+  color: #f9f5ed; /* Set the link text color to an off-white shade */
+  text-decoration: none; /* Remove the default underline for links */
+}
+
+#recipe a:hover {
+  text-decoration: underline; /* Add underline when hovering over the links */
+}
+
+#recipe h2 {
+  font-size: 24px; /* Adjust the font size of the recipe title */
+  margin-bottom: 15px; /* Adjust the spacing between the recipe title and ingredients */
+}
+
+#recipe img {
+  max-width: 100%; /* Ensure the images fit within their container */
+  border-radius: 5px; /* Add a border radius for smoother edges */
+  margin-bottom: 15px; /* Adjust the spacing between the image and other elements */
+}
+
+#recipe ul, #recipe ol {
+  padding-left: 20px; /* Add some indentation for better readability */
+  margin-bottom: 15px; /* Adjust the spacing between the list items and other elements */
+}
+
+#recipe p {
+  margin-bottom: 15px; /* Adjust the spacing between paragraphs */
+}
+
+
+
+
+
+.menu-container{
+ background-image: url("/various-vegetables-black-table-with-space-message.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 100vh;
+ 
+}
+
+
+
